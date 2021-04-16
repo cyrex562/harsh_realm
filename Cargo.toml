@@ -1,0 +1,17 @@
+[package]
+name = "harsh_realm"
+version = "0.1.0"
+authors = ["azrael <azrael@local.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+diesel = { version = "1.4", features = ["sqlite", "uuidv07", "r2d2"]}
+dotenv = "0.15"
+r2d2 = "0.8"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+
