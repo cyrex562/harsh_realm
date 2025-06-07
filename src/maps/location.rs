@@ -1,5 +1,8 @@
 use uuid::Uuid;
+use hex2d::Coordinate as HexCoord;
+use serde::{Deserialize, Serialize};
 
+#[derive(Clone, Debug,Serialize,Deserialize, PartialEq)]
 pub enum Location {
     Surface {
         body_id: Uuid,

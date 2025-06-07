@@ -1,11 +1,12 @@
 use std::collections::HashMap;
-use
+use serde::{Deserialize, Serialize};
 use crate::maps::location::Location;
 use crate::population::person_type::PersonType;
 use crate::resources::resource_type::ResourceType;
 use crate::units::unit_type::UnitType;
 use uuid::Uuid;
 
+#[derive(Debug,Clone,Serialize,Deserialize,Hash,PartialEq,Eq)]
 pub enum SpacecraftModuleType {
     Mine,
     Refinery,
@@ -16,6 +17,7 @@ pub enum SpacecraftModuleType {
 
 }
 
+#[derive(Debug,Clone,Serialize,Deserialize)]
 pub struct Spacecraft {
     id: Uuid,
     location: Location,
