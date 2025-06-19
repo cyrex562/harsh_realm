@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harsh-realm-scripts"
+version = "0.1.0"
+description = "Scripts for Harsh Realm project data processing"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["scripts"] 

@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 pub enum UnitType {}
 
 impl Debug for UnitType {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, _f: &mut Formatter<'_>) -> std::fmt::Result {
         todo!()
     }
 }
