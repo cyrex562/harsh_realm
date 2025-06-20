@@ -1,17 +1,6 @@
-[package]
-name = "harsh_realm"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    "crates/harsh_realm_bevy"
+, "crates/harsh_realm_sim"]
 
-[dependencies]
-chrono = { version = "0.4", features = ["serde"] }
-csv = "1.3"
-env_logger = "0.11.8"
-hex2d = "1.1.0"
-log = "0.4.27"
-nalgebra = { version = "0.33.2", features = ["serde-serialize"] }
-rand = "0.9.1"
-rand_chacha = "0.9.0"
-serde = { version = "1.0.219", features = ["derive"] }
-uuid = { version = "1.17.0", features = ["v4", "fast-rng", "macro-diagnostics", "serde"] }
-sdl2 = "0.37"
+resolver = "2"
